@@ -17,10 +17,10 @@ print(qc.draw())
 
 # 4. Run the circuit on a simulator (USING THE WORKING METHOD)
 simulator = Aer.get_backend('qasm_simulator')
-result = simulator.run(qc, shots=10000).result()  # Fixed this line
+result = simulator.run(qc, shots=10000).result()
 
 # 5. Get and print the results
-counts = result.get_counts()  # Fixed this line
+counts = result.get_counts()
 print("Measurement results:", counts)
 
 # 6. Visualize the results as a histogram
